@@ -1,7 +1,9 @@
-<template>
-  <spa-header/>
-  <orderlist/>
-  <spa-footer/>
+<template >
+  <div class="container">
+    <spa-header class="text-bg-primary p-3"/>
+    <orderlist/>
+    <spa-footer class="text-bg-primary p-3"/>
+  </div>
 </template>
 
 <script>
@@ -15,7 +17,8 @@ export default {
     'spa-header': SpaHeader,
     'orderlist': OrderList,
     'spa-footer': Spafooter,
-  }
+  },
+  
 }
 </script>
 
