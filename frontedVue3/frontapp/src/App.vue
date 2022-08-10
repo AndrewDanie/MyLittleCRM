@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <spa-header/>
+  <orderlist/>
+  <spa-footer/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SpaHeader from './components/SpaHeader.vue'
+import OrderList from './components/OrderList.vue'
+import Spafooter from './components/SpaFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'spa-header': SpaHeader,
+    'orderlist': OrderList,
+    'spa-footer': Spafooter,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './assets/styles/bootstrap.css'
 </style>
