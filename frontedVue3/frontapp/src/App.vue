@@ -1,6 +1,8 @@
-<template >
-  <div class="container">
+<template>
+  <div class="container col-12">
     <spa-header class="text-bg-primary p-3"/>
+    <my-dashcard/>
+    <order-add-button/>
     <orderlist/>
     <spa-footer class="text-bg-primary p-3"/>
   </div>
@@ -10,6 +12,8 @@
 import SpaHeader from './components/SpaHeader.vue'
 import OrderList from './components/OrderList.vue'
 import Spafooter from './components/SpaFooter.vue'
+import MyDashcard from './components/MyDashcard.vue'
+import OrderAddButton from './components/OrderAddButton.vue'
 
 export default {
   name: 'App',
@@ -17,11 +21,13 @@ export default {
     'spa-header': SpaHeader,
     'orderlist': OrderList,
     'spa-footer': Spafooter,
+    'my-dashcard': MyDashcard,
+    'order-add-button': OrderAddButton,
   },
   
 }
 </script>
 
 <style>
-  @import './assets/styles/bootstrap.css'
+
 </style>
