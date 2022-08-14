@@ -1,11 +1,17 @@
 <template>
   <div class="container col-12">
-    <spa-header class="text-bg-primary p-3"/>
-    <SideMenu></SideMenu>
-    <my-dashcard/>
-    <order-add-button/>
-    <orderlist/>
-    <spa-footer class="text-bg-primary p-3"/>
+    <spa-header class="row text-bg-primary p-3"/>
+    <div class="row">
+      <div class="col-1 text-bg-light border" style="width:150px;">
+        <SideMenu/>
+      </div>
+      <div class="col">
+        <my-dashcard/>
+        <order-add-button/>
+        <orderlist/>
+      </div>
+    </div>
+    <spa-footer class="row text-bg-primary p-3"/>
   </div>
 </template>
 
