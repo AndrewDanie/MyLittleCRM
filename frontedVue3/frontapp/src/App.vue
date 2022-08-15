@@ -7,7 +7,6 @@
       </div>
       <div class="col">
         <my-dashcard/>
-        <order-add-button/>
         <orderlist/>
       </div>
     </div>
@@ -20,7 +19,6 @@ import SpaHeader from './components/SpaHeader.vue'
 import OrderList from './components/OrderList.vue'
 import Spafooter from './components/SpaFooter.vue'
 import MyDashcard from './components/MyDashcard.vue'
-import OrderAddButton from './components/OrderAddButton.vue'
 import SideMenu from './components/SideMenu.vue'
 
 export default {
@@ -30,7 +28,6 @@ export default {
     "orderlist": OrderList,
     "spa-footer": Spafooter,
     "my-dashcard": MyDashcard,
-    "order-add-button": OrderAddButton,
     SideMenu
 },
   
